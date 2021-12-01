@@ -21,7 +21,7 @@ RUN pip3 install -r /predicteev/requirements.txt
 
 WORKDIR /predicteev
 
-RUN adduser -D myuser
+RUN groupadd -r myuser && useradd -r -g myuser myuser
 USER myuser
 
 # Run the app.  CMD is required to run on Heroku
