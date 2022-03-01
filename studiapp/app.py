@@ -1,4 +1,4 @@
-# python_code/second_app.py
+# imports
 from flask import Flask
 import train_model 
 import predict_model
